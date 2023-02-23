@@ -1,5 +1,5 @@
 import { WebPlugin } from '@capacitor/core';
-import { TextDetection, ImageOrientation } from './text-detector/index';
+import { TextDetection, ImageOrientation } from '.';
 
 export class CapMLWeb extends WebPlugin {
   constructor() {
