@@ -2,10 +2,12 @@
   "name": "capacitor-ocr",
   "version": "1.0.2",
   "description": "Machine Learning Plugin for Capacitor",
-  "main": "dist/esm/index.js",
+  "main": "dist/plugin.cjs.js",
+  "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
+  "unpkg": "dist/plugin.js",
   "scripts": {
-    "build": "npm run clean && tsc",
+    "build": "npm run clean && tsc && rollup -c rollup.config.js",
     "clean": "rimraf ./dist",
     "watch": "tsc --watch",
     "prepublishOnly": "npm run build"
@@ -22,8 +24,7 @@
   "files": [
     "dist/",
     "ios/",
-    "android/",
-    "src/text-detector",
+    "android/",    
     "CapMl.podspec"
   ],
   "keywords": [
