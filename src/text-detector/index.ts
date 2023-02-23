@@ -1,7 +1,6 @@
-import { Plugins } from '@capacitor/core';
-const { CapML } = Plugins;
+import { CapML } from "..";
 
-export class TextDetector implements TextDetectorInterface{
+export class TextDetector implements TextDetectorInterface {
 
   async detectText(filename: string, orientation?: ImageOrientation): Promise<TextDetection[]> {
     const response = await CapML.detectText({filename, orientation})

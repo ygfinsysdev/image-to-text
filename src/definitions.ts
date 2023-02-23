@@ -1,11 +1,4 @@
-import '@capacitor/core';
-
-declare module "@capacitor/core" {
-  interface PluginRegistry {
-    CapML: {
-      detectText: Function;
-    };
-  }
+export interface CapMLPlugin {
+  detectText: Function;
 }
 
-export default {};
