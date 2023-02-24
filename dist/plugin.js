@@ -9,9 +9,9 @@ var capacitorCapacitorOcr = (function (exports, core) {
         ImageOrientation["Right"] = "RIGHT";
     })(exports.ImageOrientation || (exports.ImageOrientation = {}));
 
-    const CapacitorOcr = core.registerPlugin('CapacitorOcr', {});
+    const Ocr = core.registerPlugin('CapacitorOcr', {});
 
-    exports.CapacitorOcr = CapacitorOcr;
+    exports.Ocr = Ocr;
 
     Object.defineProperty(exports, '__esModule', { value: true });
 

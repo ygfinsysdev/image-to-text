@@ -1,4 +1,4 @@
 import type { CapacitorOcrPlugin } from './definitions';
-declare const CapacitorOcr: CapacitorOcrPlugin;
+declare const Ocr: CapacitorOcrPlugin;
 export * from './definitions';
-export { CapacitorOcr };
+export { Ocr };
