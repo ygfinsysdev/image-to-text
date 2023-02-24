@@ -61,6 +61,9 @@ for (let detection of data.textDetections) {
 
 A full sample application can be found [here](https://github.com/dtarnawsky/capacitor-ocr-example).
 
+![video of scanning a card and it being converted to text](https://user-images.githubusercontent.com/84595830/221210852-2203919a-bb43-46ed-b9bf-04d096425dcb.gif)
+
+
 ## iOS Usage
 No additional setup is required to use this plugin in a iOS Capacitor project.
 
