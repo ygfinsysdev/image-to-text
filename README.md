@@ -198,6 +198,72 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/bendyw
 
 If you're curious about the implementation, here's an extensive blog post series - https://bendyworks.com/blog/capacitor-plugin-for-text-detection-part1
 
+## API
+
+<docgen-index>
+
+* [`detectText(...)`](#detecttext)
+* [Interfaces](#interfaces)
+* [Enums](#enums)
+
+</docgen-index>
+
+<docgen-api>
+<!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
+
+### detectText(...)
+
+```typescript
+detectText(options: detectTextOptions) => Promise<TextDetection[]>
+```
+
+Detect text in an image
+
+| Param         | Type                                                            | Description                |
+| ------------- | --------------------------------------------------------------- | -------------------------- |
+| **`options`** | <code><a href="#detecttextoptions">detectTextOptions</a></code> | Options for text detection |
+
+**Returns:** <code>Promise&lt;TextDetection[]&gt;</code>
+
+--------------------
+
+
+### Interfaces
+
+
+#### TextDetection
+
+| Prop              | Type                          |
+| ----------------- | ----------------------------- |
+| **`bottomLeft`**  | <code>[number, number]</code> |
+| **`bottomRight`** | <code>[number, number]</code> |
+| **`topLeft`**     | <code>[number, number]</code> |
+| **`topRight`**    | <code>[number, number]</code> |
+| **`text`**        | <code>string</code>           |
+
+
+#### detectTextOptions
+
+| Prop              | Type                                                          |
+| ----------------- | ------------------------------------------------------------- |
+| **`filename`**    | <code>string</code>                                           |
+| **`orientation`** | <code><a href="#imageorientation">ImageOrientation</a></code> |
+
+
+### Enums
+
+
+#### ImageOrientation
+
+| Members     | Value                |
+| ----------- | -------------------- |
+| **`Up`**    | <code>"UP"</code>    |
+| **`Down`**  | <code>"DOWN"</code>  |
+| **`Left`**  | <code>"LEFT"</code>  |
+| **`Right`** | <code>"RIGHT"</code> |
+
+</docgen-api>
+
 ## License
 Hippocratic License Version 2.0.
 

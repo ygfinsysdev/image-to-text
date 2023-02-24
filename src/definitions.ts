@@ -1,19 +1,14 @@
-import { CapML } from ".";
-
 export interface CapMLPlugin {
-  detectText: Function;
+    /**
+   * Detect text in an image
+   * @param options Options for text detection   
+   */
+  detectText(options: detectTextOptions): Promise<TextDetection[]>;
 }
 
-export class TextDetector implements TextDetectorInterface {
-
-  async detectText(filename: string, orientation?: ImageOrientation): Promise<TextDetection[]> {
-    const response = await CapML.detectText({filename, orientation})
-    return response.textDetections
-  }
-}
-
-export interface TextDetectorInterface {
-  detectText(filename: string, orientation: ImageOrientation): Promise<TextDetection[]>;
+export interface detectTextOptions {
+  filename: string;
+  orientation?: ImageOrientation
 }
 
 export interface TextDetection {

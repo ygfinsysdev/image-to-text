@@ -1,7 +1,0 @@
-{
-  "name": "ImageReader",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}
