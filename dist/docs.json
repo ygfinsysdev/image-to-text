@@ -7,12 +7,12 @@
     "methods": [
       {
         "name": "detectText",
-        "signature": "(options: detectTextOptions) => Promise<TextDetection[]>",
+        "signature": "(options: DetectTextOptions) => Promise<TextDetection[]>",
         "parameters": [
           {
             "name": "options",
             "docs": "Options for text detection",
-            "type": "detectTextOptions"
+            "type": "DetectTextOptions"
           }
         ],
         "returns": "Promise<TextDetection[]>",
@@ -25,7 +25,7 @@
         "docs": "Detect text in an image",
         "complexTypes": [
           "TextDetection",
-          "detectTextOptions"
+          "DetectTextOptions"
         ],
         "slug": "detecttext"
       }
@@ -78,7 +78,7 @@
       ]
     },
     {
-      "name": "detectTextOptions",
+      "name": "DetectTextOptions",
       "slug": "detecttextoptions",
       "docs": "",
       "tags": [],

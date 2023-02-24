@@ -3,10 +3,10 @@ export interface CapMLPlugin {
    * Detect text in an image
    * @param options Options for text detection   
    */
-  detectText(options: detectTextOptions): Promise<TextDetection[]>;
+  detectText(options: DetectTextOptions): Promise<TextDetection[]>;
 }
 
-export interface detectTextOptions {
+export interface DetectTextOptions {
   filename: string;
   orientation?: ImageOrientation
 }

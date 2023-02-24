@@ -214,14 +214,14 @@ If you're curious about the implementation, here's an extensive blog post series
 ### detectText(...)
 
 ```typescript
-detectText(options: detectTextOptions) => Promise<TextDetection[]>
+detectText(options: DetectTextOptions) => Promise<TextDetection[]>
 ```
 
 Detect text in an image
 
 | Param         | Type                                                            | Description                |
 | ------------- | --------------------------------------------------------------- | -------------------------- |
-| **`options`** | <code><a href="#detecttextoptions">detectTextOptions</a></code> | Options for text detection |
+| **`options`** | <code><a href="#detecttextoptions">DetectTextOptions</a></code> | Options for text detection |
 
 **Returns:** <code>Promise&lt;TextDetection[]&gt;</code>
 
@@ -242,7 +242,7 @@ Detect text in an image
 | **`text`**        | <code>string</code>           |
 
 
-#### detectTextOptions
+#### DetectTextOptions
 
 | Prop              | Type                                                          |
 | ----------------- | ------------------------------------------------------------- |
