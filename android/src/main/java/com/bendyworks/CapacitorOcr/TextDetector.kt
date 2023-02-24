@@ -1,4 +1,4 @@
-package com.bendyworks.capML
+package com.bendyworks.CapacitorOcr
 
 import android.graphics.Bitmap
 import android.util.NoSuchPropertyException

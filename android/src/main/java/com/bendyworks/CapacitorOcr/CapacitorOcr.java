@@ -1,4 +1,4 @@
-package com.bendyworks.capML;
+package com.bendyworks.CapacitorOcr;
 
 import android.graphics.Bitmap;
 import android.graphics.Matrix;
@@ -15,7 +15,7 @@ import java.io.File;
 import java.io.IOException;
 
 @NativePlugin()
-public class CapML extends Plugin {
+public class CapacitorOcr extends Plugin {
 
   @PluginMethod()
   public void detectText(PluginCall call) throws IOException {

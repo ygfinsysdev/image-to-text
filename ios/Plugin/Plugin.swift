@@ -6,8 +6,8 @@ import Capacitor
  * Please read the Capacitor iOS Plugin Development Guide
  * here: https://capacitor.ionicframework.com/docs/plugins/ios
  */
-@objc(CapML)
-public class CapML: CAPPlugin {
+@objc(CapacitorOcr)
+public class CapacitorOcr: CAPPlugin {
     @objc func detectText(_ call: CAPPluginCall) {
         guard var filename = call.getString("filename") else {
             call.reject("file not found")
