@@ -1,6 +1,6 @@
 import { registerPlugin } from '@capacitor/core';
-const CapML = registerPlugin('CapML', {});
-export { CapML };
+const CapacitorOcr = registerPlugin('CapacitorOcr', {});
+export { CapacitorOcr };
 export * from './definitions';
 // export * from './web';
 //# sourceMappingURL=index.js.map

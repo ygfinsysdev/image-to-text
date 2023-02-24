@@ -12,8 +12,8 @@ exports.ImageOrientation = void 0;
     ImageOrientation["Right"] = "RIGHT";
 })(exports.ImageOrientation || (exports.ImageOrientation = {}));
 
-const CapML = core.registerPlugin('CapML', {});
+const CapacitorOcr = core.registerPlugin('CapacitorOcr', {});
 // export * from './web';
 
-exports.CapML = CapML;
+exports.CapacitorOcr = CapacitorOcr;
 //# sourceMappingURL=plugin.cjs.js.map

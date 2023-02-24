@@ -1,7 +1,7 @@
 {
   "api": {
-    "name": "CapMLPlugin",
-    "slug": "capmlplugin",
+    "name": "CapacitorOcrPlugin",
+    "slug": "capacitorocrplugin",
     "docs": "",
     "tags": [],
     "methods": [

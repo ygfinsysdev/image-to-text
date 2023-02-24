@@ -1,4 +1,4 @@
-import type { CapMLPlugin } from './definitions';
-declare const CapML: CapMLPlugin;
-export { CapML };
+import type { CapacitorOcrPlugin } from './definitions';
+declare const CapacitorOcr: CapacitorOcrPlugin;
+export { CapacitorOcr };
 export * from './definitions';

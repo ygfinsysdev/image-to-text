@@ -4,7 +4,7 @@ export default {
     {
       file: 'dist/plugin.js',
       format: 'iife',
-      name: 'capacitorCapML',
+      name: 'CapacitorOcr',
       globals: {
         '@capacitor/core': 'capacitorExports',
       },

@@ -1,4 +1,4 @@
-var capacitorCapML = (function (exports, core) {
+var CapacitorOcr = (function (exports, core) {
     'use strict';
 
     exports.ImageOrientation = void 0;
@@ -9,10 +9,10 @@ var capacitorCapML = (function (exports, core) {
         ImageOrientation["Right"] = "RIGHT";
     })(exports.ImageOrientation || (exports.ImageOrientation = {}));
 
-    const CapML = core.registerPlugin('CapML', {});
+    const CapacitorOcr = core.registerPlugin('CapacitorOcr', {});
     // export * from './web';
 
-    exports.CapML = CapML;
+    exports.CapacitorOcr = CapacitorOcr;
 
     Object.defineProperty(exports, '__esModule', { value: true });
 

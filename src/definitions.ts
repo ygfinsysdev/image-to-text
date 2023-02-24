@@ -1,4 +1,4 @@
-export interface CapMLPlugin {
+export interface CapacitorOcrPlugin {
     /**
    * Detect text in an image
    * @param options Options for text detection   

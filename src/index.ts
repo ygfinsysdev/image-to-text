@@ -1,13 +1,13 @@
 import { registerPlugin } from '@capacitor/core';
 
-import type { CapMLPlugin } from './definitions';
+import type { CapacitorOcrPlugin } from './definitions';
 
-const CapML = registerPlugin<CapMLPlugin>(
-    'CapML',
+const CapacitorOcr = registerPlugin<CapacitorOcrPlugin>(
+    'CapacitorOcr',
     {},
   );
 
-export { CapML };
+export { CapacitorOcr };
 
 export * from './definitions';
 // export * from './web';
