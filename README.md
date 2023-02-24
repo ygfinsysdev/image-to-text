@@ -214,7 +214,7 @@ If you're curious about the implementation, here's an extensive blog post series
 ### detectText(...)
 
 ```typescript
-detectText(options: DetectTextOptions) => Promise<TextDetection[]>
+detectText(options: DetectTextOptions) => Promise<TextDetections>
 ```
 
 Detect text in an image
@@ -223,12 +223,19 @@ Detect text in an image
 | ------------- | --------------------------------------------------------------- | -------------------------- |
 | **`options`** | <code><a href="#detecttextoptions">DetectTextOptions</a></code> | Options for text detection |
 
-**Returns:** <code>Promise&lt;TextDetection[]&gt;</code>
+**Returns:** <code>Promise&lt;<a href="#textdetections">TextDetections</a>&gt;</code>
 
 --------------------
 
 
 ### Interfaces
+
+
+#### TextDetections
+
+| Prop                 | Type                         |
+| -------------------- | ---------------------------- |
+| **`textDetections`** | <code>TextDetection[]</code> |
 
 
 #### TextDetection
