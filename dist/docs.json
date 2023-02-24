@@ -1,0 +1,139 @@
+{
+  "api": {
+    "name": "CapMLPlugin",
+    "slug": "capmlplugin",
+    "docs": "",
+    "tags": [],
+    "methods": [
+      {
+        "name": "detectText",
+        "signature": "(options: detectTextOptions) => Promise<TextDetection[]>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "Options for text detection",
+            "type": "detectTextOptions"
+          }
+        ],
+        "returns": "Promise<TextDetection[]>",
+        "tags": [
+          {
+            "name": "param",
+            "text": "options Options for text detection"
+          }
+        ],
+        "docs": "Detect text in an image",
+        "complexTypes": [
+          "TextDetection",
+          "detectTextOptions"
+        ],
+        "slug": "detecttext"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [
+    {
+      "name": "TextDetection",
+      "slug": "textdetection",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "bottomLeft",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "[number, number]"
+        },
+        {
+          "name": "bottomRight",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "[number, number]"
+        },
+        {
+          "name": "topLeft",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "[number, number]"
+        },
+        {
+          "name": "topRight",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "[number, number]"
+        },
+        {
+          "name": "text",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "detectTextOptions",
+      "slug": "detecttextoptions",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "filename",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "orientation",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [
+            "ImageOrientation"
+          ],
+          "type": "ImageOrientation"
+        }
+      ]
+    }
+  ],
+  "enums": [
+    {
+      "name": "ImageOrientation",
+      "slug": "imageorientation",
+      "members": [
+        {
+          "name": "Up",
+          "value": "\"UP\"",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "Down",
+          "value": "\"DOWN\"",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "Left",
+          "value": "\"LEFT\"",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "Right",
+          "value": "\"RIGHT\"",
+          "tags": [],
+          "docs": ""
+        }
+      ]
+    }
+  ],
+  "typeAliases": []
+}
