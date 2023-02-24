@@ -1,7 +1,7 @@
 {
-  "name": "capacitor-ocr",
+  "name": "@capacitor-community/image-to-text",
   "version": "4.0.0",
-  "description": "Machine Learning Plugin for Capacitor",
+  "description": "Image to Text (OCR) Plugin for Capacitor",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -33,7 +33,7 @@
     "watch": "tsc --watch",
     "prepublishOnly": "npm run build"    
   },
-  "author": "Vennela Kodali",
+  "author": "Originally Vennela Kodali and now Capacitor Community",
   "license": "Hippocratic License Version 2.0",
   "devDependencies": {
     "@capacitor/android": "^4.0.0",
@@ -69,9 +69,9 @@
   },  
   "repository": {
     "type": "git",
-    "url": "git@github.com:bendyworks/cap-ml"
+    "url": "git@github.com:capacitor-community/image-to-text"
   },
   "bugs": {
-    "url": "git@github.com:bendyworks/cap-ml/issues"
+    "url": "git@github.com:capacitor-community/image-to-text/issues"
   }
 }
