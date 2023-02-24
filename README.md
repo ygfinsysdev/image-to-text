@@ -20,7 +20,7 @@ There is one method `detectText` that takes a filename of an image and will retu
 
 Add the following to your application:
 ```typescript
-import { Ocr, TextDetections } from 'capacitor-ocr';
+import { Ocr, TextDetections } from '@capacitor-community/image-to-text';
 
 ...
 
@@ -39,7 +39,7 @@ You can use the [`@capacitor/camera`](https://capacitorjs.com/docs/apis/camera) 
 
 ```
 import { Camera, CameraResultType, CameraSource } from '@capacitor/camera';
-import { Ocr, TextDetections } from 'capacitor-ocr';
+import { Ocr, TextDetections } from '@capacitor-community/image-to-text';
 ```
 
 ...

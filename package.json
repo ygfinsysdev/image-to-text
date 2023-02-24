@@ -1,6 +1,6 @@
 {
   "name": "@capacitor-community/image-to-text",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "Image to Text (OCR) Plugin for Capacitor",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -10,7 +10,7 @@
     "dist/",
     "ios/",
     "android/",    
-    "CapacitorOcr.podspec"
+    "CapacitorCommunityImageToText.podspec"
   ],  
   "keywords": [
     "capacitor",
