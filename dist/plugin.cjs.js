@@ -13,7 +13,6 @@ exports.ImageOrientation = void 0;
 })(exports.ImageOrientation || (exports.ImageOrientation = {}));
 
 const CapacitorOcr = core.registerPlugin('CapacitorOcr', {});
-// export * from './web';
 
 exports.CapacitorOcr = CapacitorOcr;
 //# sourceMappingURL=plugin.cjs.js.map

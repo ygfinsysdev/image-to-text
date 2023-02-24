@@ -7,7 +7,5 @@ const CapacitorOcr = registerPlugin<CapacitorOcrPlugin>(
     {},
   );
 
-export { CapacitorOcr };
-
 export * from './definitions';
-// export * from './web';
+export { CapacitorOcr };

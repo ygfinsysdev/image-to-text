@@ -1,4 +1,4 @@
-var CapacitorOcr = (function (exports, core) {
+var capacitorCapacitorOcr = (function (exports, core) {
     'use strict';
 
     exports.ImageOrientation = void 0;
@@ -10,7 +10,6 @@ var CapacitorOcr = (function (exports, core) {
     })(exports.ImageOrientation || (exports.ImageOrientation = {}));
 
     const CapacitorOcr = core.registerPlugin('CapacitorOcr', {});
-    // export * from './web';
 
     exports.CapacitorOcr = CapacitorOcr;
 
