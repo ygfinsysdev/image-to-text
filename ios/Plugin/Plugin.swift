@@ -64,8 +64,7 @@ public class TextDetector {
 
         DispatchQueue.global(qos: .userInitiated).async {
             do {
-                try imageRequestHandler.perform([self.textDetectionRequest])
-                self.call.resolve(["textDetections": self.detectedText])
+                try imageRequestHandler.perform([self.textDetectionRequest])                
             } catch let error as NSError {
                 print("Failed to perform image request: \(error)")
                 self.call.reject(error.description)
@@ -93,12 +92,12 @@ public class TextDetector {
             }
 
             self.detectedText = results.map {[
-                "topLeft": [Double($0.topLeft.x), Double($0.topLeft.y)] as [Double],
                 "topRight": [Double($0.topRight.x), Double($0.topRight.y)] as [Double],
                 "bottomLeft": [Double($0.bottomLeft.x), Double($0.bottomLeft.y)] as [Double],
                 "bottomRight": [Double($0.bottomRight.x), Double($0.bottomRight.y)] as [Double],
                 "text": $0.topCandidates(1).first?.string as String?
             ]}
+            self.call.resolve(["textDetections": self.detectedText])
         }
     }
 
