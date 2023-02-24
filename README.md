@@ -1,4 +1,4 @@
-# Cap-ML
+# capacitor-ocr
 
 Machine Learning Plugin for Capacitor. Currently offered implementations include -
   - Text Detector: Text Detection in still images.
