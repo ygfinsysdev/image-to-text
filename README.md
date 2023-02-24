@@ -2,14 +2,14 @@
 <h3 align="center">Image To Text</h3>
 <p align="center"><strong><code>@capacitor-community/image-to-text</code></strong></p>
 <p align="center">
-  Capacitor plugin for mage to text processing using Apple's Vision Framework for iOS and MLKit's Vision Framework for Android.</a>.
+  Capacitor plugin for image to text processing using Apple's Vision Framework for iOS and MLKit's Vision Framework for Android.</a>.
 </p>
 
-Note: This project was forked from the [Cap ML](https://github.com/bendyworks/cap-ml) plugin written by Vennela Kodali.
+## Credits
+This project was forked from the [Cap ML](https://github.com/bendyworks/cap-ml) plugin written by Vennela Kodali. It was refactored and converted to Capacitor 4.
 
 ## Installation
 
-TBA
 ```
 npm install @capacitor-community/image-to-text
 ```
