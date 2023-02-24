@@ -1,8 +1,6 @@
 # Capacitor OCR Plugin
 
-A plugin for Capacitor 4+ that performs image to text processing.
-
-Apple's Vision Framework is used for iOS and MLKit's Vision Framework is used for Android. Web is not supported.
+A plugin for Capacitor 4+ that performs image to text processing using Apple's Vision Framework for iOS and MLKit's Vision Framework for Android.
 
 ## Installation
 
@@ -21,22 +19,25 @@ import { Ocr, TextDetections } from 'capacitor-ocr';
 
 ...
 
-const data: TextDetections = await Ocr.detectText({ filename });
+const data: TextDetections = await Ocr.detectText({ filename: '[get-filename-of-image-jpg]' });
 for (let detection of data.textDetections) {
     console.log(detection.text);
 }
 ```
 
-## Example
+The above code will convert the image file and `console.log` the text found in it.
 
-You can combine the use of the plugin `@capacitor/camera` to capture an image and then output text.
+
+## Example with Camera
+
+You can use the [`@capacitor/camera`](https://capacitorjs.com/docs/apis/camera) plugin to take a photo and convert it to text:
 
 ```
 import { Camera, CameraResultType, CameraSource } from '@capacitor/camera';
 import { Ocr, TextDetections } from 'capacitor-ocr';
 ```
 
-and used like:
+...
 
 ```typescript
 const photo = await Camera.getPhoto({
@@ -64,18 +65,19 @@ Your project must include a `google-services.json` file stored in the Android pr
 
 ### Create Firebase Project and App
 
-- Navigate to https://console.firebase.google.com/ and sign-in
+- Sign in to [console.firebase.google.com](https://console.firebase.google.com/)
 - Click on `Add Project` and follow through the steps.
-- Once the project is created, click on `android` icon to create an android app.
-- Enter the package name - this should be the same as the package name of your app (You can find it in `android/app/AndroidManifest.xml`). 
+- Click the `Android` icon to create an android app.
+- Enter the `Package Name` which must match your apps package name (You can find it in `android/app/AndroidManifest.xml`). 
 - Click `Register App`
-- Download `google-services.json`
-- Save `google-services.json` in your project's `android/app` directory.
+- Download `google-services.json` and save into your project's `android/app` directory.
 
 ### Add Firebase SDK
-The example project has this in place already, as do most starter Capacitor projects. Look in `build.gradle` and ensure `google-services.json` is loaded.
+The sample project has this in place in its `build.gradle`  (see [here as a reference](https://github.com/dtarnawsky/capacitor-ocr-example/blob/09e7fb935f68e642d4906eb0ed002a52d1868b52/android/app/build.gradle#L47)).
 
-## API
+Note: Most starter Capacitor projects are preconfigured to load `google-services.json`.
+
+## API Reference
 
 <docgen-index>
 
@@ -151,6 +153,8 @@ Detect text in an image
 ## Compatibility
 
 Images are expected to be in portrait mode only, i.e. with text facing up. It will try to process even otherwise, but note that it might result in gibberish.
+
+iOS and Android are supported. Web is not.
 
 | Feature                          | ios                         | android                     |
 | -------------------------------- | --------------------------- | --------------------------- |
