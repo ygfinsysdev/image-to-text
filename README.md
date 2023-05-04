@@ -7,6 +7,8 @@
 
 ## Credits
 This project was forked from the [Cap ML](https://github.com/bendyworks/cap-ml) plugin written by Vennela Kodali. It was refactored and converted to Capacitor 4.
+- For Capacitor 4 projects use v4.x
+- For Capacitor 5 projects use v5.x
 
 ## Installation
 
@@ -151,10 +153,10 @@ Detect text in an image
 
 | Members     | Value                |
 | ----------- | -------------------- |
-| **`Up`**    | <code>"UP"</code>    |
-| **`Down`**  | <code>"DOWN"</code>  |
-| **`Left`**  | <code>"LEFT"</code>  |
-| **`Right`** | <code>"RIGHT"</code> |
+| **`Up`**    | <code>'UP'</code>    |
+| **`Down`**  | <code>'DOWN'</code>  |
+| **`Left`**  | <code>'LEFT'</code>  |
+| **`Right`** | <code>'RIGHT'</code> |
 
 </docgen-api>
 
