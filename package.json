@@ -1,5 +1,5 @@
 {
-  "name": "@capacitor-community/image-to-text",
+  "name": "@ygfinsysdev/image-to-text",
   "version": "5.0.2",
   "description": "Image to Text (OCR) Plugin for Capacitor",
   "main": "dist/plugin.cjs.js",
